@@ -5,6 +5,9 @@ This repo consists of the coding assignments and other course deliverables done 
 ## Team ID: PNT2022TMID35896
 
 Team Leader: PRANAAV JOTHI M
+
 Team Member 1: RAMACHANDRA T
+
 Team Member 2: MANOJ KUMAR B
+
 Team Member 3: TIVETHA T
