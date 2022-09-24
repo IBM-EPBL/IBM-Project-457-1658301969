@@ -9,5 +9,6 @@
 
 * Data Visualization and Pre-Processing
 * Visualization of a dataset using various analysis
+* Handling missing values
 * Splitting the data for training and testing
 
