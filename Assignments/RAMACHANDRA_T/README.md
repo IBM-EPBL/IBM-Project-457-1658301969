@@ -18,6 +18,6 @@
 *  Image Augmentation
 *  Model Creation and Addition of Layers
 *  Compilation & Fitting of the model
-*  
+*  Testing the Model
 
 
