@@ -16,5 +16,6 @@
 
 *  Build CNN Model for Classification Of Flowers
 *  Image Augmentation
+*  Model Creation and Addition of Layers
 
 
