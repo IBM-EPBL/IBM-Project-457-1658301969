@@ -12,3 +12,8 @@
 * Handling missing values
 * Splitting the data for training and testing
 
+## Assignment 3
+
+*  Build CNN Model for Classification Of Flowers
+
+
