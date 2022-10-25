@@ -20,4 +20,10 @@
 *  Compilation & Fitting of the model
 *  Testing the Model
 
+## Assignment 4
+
+* Create Model and Add Layers
+* Training the Model
+* Preprocessing the Test Dataset
+* Testing the Model
 
