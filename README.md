@@ -13,3 +13,4 @@ Team Member 2: MANOJ KUMAR B
 Team Member 3: TIVETHA T
 
 DataSet: https://www.kaggle.com/datasets/ahmedkhanak1995/sign-language-gesture-images-dataset
+YouTube: https://youtube.com/playlist?list=PLlSI9VoPmWt6I1kTziEeFQ1yY-TD6mjpo
