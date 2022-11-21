@@ -145,14 +145,14 @@
         <div id="topmenu">
             <div class="topnav-right" >
                 <a href="index">Home</a>
-                <a href="logout">Logout</a>
+                <a href="{{url_for('logout')}}">Logout</a>
             </div>
             <div id="hedder">
                 Real-Time Communication System Powered by AI for Specially-Abled
             </div>
         </div>
         <div class="left-half">
-            <div id="cam"> <!-- class="col-md-6 col-md-offset-3" -->
+            <div id="cam">
                 <img src="{{ url_for('video_feed') }}" style="width:99%;">
             </div>
         </div>
@@ -188,7 +188,7 @@
                 <a href="https://youtube.com/playlist?list=PLlSI9VoPmWt6I1kTziEeFQ1yY-TD6mjpo">
                     <img
                         src="static/img/YouTube.svg.webp"
-                        alt="GitLogo"
+                        alt="YouTube"
                         height="20px"
                         width="28px"
                         style="border-radius: 18%; margin-right: 40px"
