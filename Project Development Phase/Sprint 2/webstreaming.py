@@ -33,9 +33,19 @@ def index():
 def home():
     return render_template('index.html')
 
+@app.route('/register')
+def register():
+    return render_template('register.html')
+
+@app.route('/login')
+def login():
+    return render_template('login.html')
+
+@app.route('/trial')
+def trial():
+    return render_template('trial.html')
+
 camera = cv2.VideoCapture(0)
-
-
 
 def gen_frames():
     while True:
@@ -62,7 +72,6 @@ def video_feed():
     #Video streaming route. Put this in the src attribute of an img tag
     return Response(gen_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
-
 @app.route('/capture')
 def capture():
      success, frame = camera.read()
@@ -72,21 +81,9 @@ def capture():
      pred += text
      return render_template("trial.html", info=text, comu=pred)
 
-@app.route('/register')
-def register():
-    return render_template('register.html',methods=["GET","POST"])
-
-@app.route('/login')
-def login():
-    return render_template('login.html', methods=["GET","POST"], info="")
-
-@app.route('/trial')
-def trial():
-    return render_template('trial.html',methods=["GET","POST"])
-
-@app.route('/prediction')
-def prediction():
-    return render_template('prediction.html',methods=["GET","POST"])
+@app.route('/history')
+def hostory():
+    return render_template('history.html')
 
 @app.route('/logout')
 def logout():
