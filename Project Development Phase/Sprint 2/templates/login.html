@@ -132,7 +132,7 @@
             </div>
         </div>
         <div id="login" class="login">
-            <form action="{{url_for('afterlogin')}}" method="post"> 
+            <form action="{{url_for('post_login')}}" method="POST"> 
                 <div id="logo2">
                     <img 
                     src="static/img/Login.png"
@@ -147,23 +147,23 @@
                         placeholder="Enter Registered Email ID"
                         name="email"
                         required
-                    ><br>
+                    ><br><br>
                     <h1></h1>Password: <br>
                     <input 
                         type="password"
                         placeholder="Enter Password" 
                         name="password"
                         required
-                    ><br>
+                    ><br><br>
                     <button 
                         type="submit">
                         Login
-                    </button><br>
+                    </button><br><br>
+                    <!-- </button><br>
                     <button 
                         type="forgot">
                         Forgot Password
-                    </button><br>
-                    <h2>{{info}}</h2>
+                    </button><br> -->
                 </div>
             </form>
         </div>
@@ -184,7 +184,7 @@
                 <a href="https://youtube.com/playlist?list=PLlSI9VoPmWt6I1kTziEeFQ1yY-TD6mjpo">
                     <img
                         src="static/img/YouTube.svg.webp"
-                        alt="GitLogo"
+                        alt="YouTube"
                         height="20px"
                         width="28px"
                         style="border-radius: 18%; margin-right: 40px"
