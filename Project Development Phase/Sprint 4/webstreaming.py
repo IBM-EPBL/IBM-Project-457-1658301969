@@ -48,7 +48,7 @@ def trial():
 
 camera = cv2.VideoCapture(0)
 
-model = load_model('sld_model.h5')
+model = load_model('aslpng1_1.h5')
 
 def gen_frames():
     while True:
@@ -67,7 +67,7 @@ vals = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C',
         'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '_']
 
 def detect(frame):
-    img = resize(frame,(256,256,1))
+    img = resize(frame,(50,50,1))
     img = np.expand_dims(img,axis=0)
     if(np.max(img)>1):
         img = img/255.0
