@@ -10,6 +10,7 @@ from gtts import gTTS
 
 global graph
 global writer
+pred = ""
 
 from skimage.transform import resize
 
@@ -80,9 +81,10 @@ def capture():
      success, frame = camera.read()
      cv2.imwrite('img.jpg', frame)
      text = detect(frame)
-     pred = ""
+     global pred
      pred += text
-     return render_template("prediction.html", info=text, comu=pred)
+     return render_template("prediction.html", info=text, comu=pred),
+
 
 # @app.route('/voice', methods=['GET','POST'])
 # def voice():
