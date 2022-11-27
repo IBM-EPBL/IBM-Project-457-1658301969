@@ -10,6 +10,7 @@ from gtts import gTTS
 
 global graph
 global writer
+pred = ""
 
 from skimage.transform import resize
 
@@ -61,9 +62,9 @@ def gen_frames():
                    b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
             
 
-vals = ['C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C',
-        'C', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A',
-        'C', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'C', 'C', 'C']
+vals = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C',
+        'D', 'E', 'F', 'G', 'H', 'I', 'J', 'J', 'K', 'L', 'M', 'N', 'O',
+        'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '_']
 
 def detect(frame):
     img = resize(frame,(256,256,1))
@@ -84,7 +85,7 @@ def capture():
      success, frame = camera.read()
      cv2.imwrite('img.jpg', frame)
      text = detect(frame)
-     pred = ""
+     global pred
      pred += text
      return render_template("prediction.html", info=text, comu=pred)
 
